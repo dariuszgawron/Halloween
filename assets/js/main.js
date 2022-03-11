@@ -22,3 +22,21 @@ navLinks.forEach(navLink => {
         closeMenu();
     })
 })
+
+// ACTIVE HEADER
+const header = document.getElementById('header');
+function scrollHeader() {
+    this.scrollY > 40 ? header.classList.add('header--active') : header.classList.remove('header--active');
+}
+window.addEventListener('scroll',scrollHeader);
+
+// SCROLL UP
+
+// SCROLL SECTIONS
+
+// SWIPER
+const newSwiper = new Swiper(".new-swiper", {
+    spaceBetween: 30,
+    loop: true,
+    
+})

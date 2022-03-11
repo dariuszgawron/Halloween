@@ -89,12 +89,12 @@ button {
 }
 
 .section {
-    padding: 5rem 0 1.5rem;
+    padding: 3rem 0 4.5rem;
 }
 
 .section__title {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-medium);
     /* text-transform: ; */
@@ -127,7 +127,9 @@ button {
     background: none;
 }
 
-.button-icon {}
+.button-icon {
+    font-size: var(--font-size-5);
+}
 
 /* HEADER */
 .header {
@@ -271,19 +273,174 @@ button {
 }
 
 /* FAVORITE */
+.favorite {
 
+}
+
+.favorite__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.favorite__card {
+    position: relative;
+    padding: 1rem .5rem;
+    text-align: center;
+    background: transparent;
+    border: none;
+    transition: .4s;
+}
+
+.favorite__img {
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.favorite__data {
+
+}
+
+.favorite__title {
+    margin-bottom: .5rem;
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-medium);
+}
+
+.favorite__description {
+    font-size: var(--font-size-6);
+}
 
 /* ABOUT */
+.about {
 
+}
+
+.about__container {
+    display: grid;
+    row-gap: 6rem;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__description {
+    margin-bottom: 1.5rem;
+}
+
+.about__img {
+    width: 70%;
+    justify-self: center;
+    transform: rotate(-20deg);
+}
 
 /* CANDY */
+.candy {
 
+}
+
+.candy__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+
+.candy__card {
+    position: relative;
+    padding: 1.2rem;
+    text-align: center;
+    background: var(--element-color);
+    border: none;
+    border-radius: .5rem;
+    transition: .4s;
+}
+
+.candy__img {
+    max-width: 80%;
+    height: 70px;
+    margin-bottom: 1rem;
+    padding: .3rem;
+}
+
+.candy__data {
+
+}
+
+.candy__title {
+    margin-bottom: .2rem;
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-bold);
+}
+
+.candy__category {
+    margin-bottom: .4rem;
+    font-size: var(--font-size-7);
+}
+
+.candy__price {
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-medium);
+}
 
 /* DISCOUNT */
+.discount {
+    background: var(--element-color);
+    border-radius: .8rem;
+}
 
+.discount__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discount__img {
+    max-width: 100%;
+}
 
 /* NEW */
+.new {
 
+}
+
+.new__container {
+
+}
+
+.new__card {
+
+}
+
+.new__tag {
+
+}
+
+.new__img {
+
+}
+
+.new__title {
+
+}
+
+.new__category {
+
+}
+
+.new__price-group {
+
+}
+
+.new__price-new {
+
+}
+
+.new__price-old {
+
+}
 
 /* NEWSLETTER */
 
