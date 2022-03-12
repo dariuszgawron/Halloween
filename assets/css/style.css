@@ -20,10 +20,15 @@
     --primary-color: hsl(24, 90%, 49%);
     --secondary-color: hsl(24, 96%, 42%);
     /* --primary-color: hsl(24, 73%, 55%); */
-    --background-color: linear-gradient(95deg, #0E5044, #D9C0A6);
-    --element-color: linear-gradient(138deg, #0E5044, #D9C0A6);
+    /* --background-color: linear-gradient(95deg, #0E5044, #D9C0A6); */
+    /* --background-color: linear-gradient(270deg ,#00A1AB, #020112
+    ); */
+    --background-color: linear-gradient(90deg ,#2D6509, #4C8D05 
+    );
+    /* --element-color: linear-gradient(138deg, #0E5044, #D9C0A6); */
+    --element-color: hsla(0, 0%, 0%, .2);
     --text-color-dark: hsl(206, 4%, 42);
-    --text-color-light: hsl(0, 0%, 95%);
+    --text-color-light: hsl(0, 0%, 77%); /* 95% */
     --heading-color: hsl(0, 0%, 98%);
     --border-color: hsl(0, 0%, 90%);
 }
@@ -44,6 +49,7 @@ body {
     /* https://colors.dopely.top/gradients */
     /* https://colors.dopely.top/gradients/co9OelQrqwK */
     background: var(--background-color);
+    background-size: cover;
     color: var(--text-color-light);
 
 }
@@ -110,7 +116,7 @@ button {
     padding: .8rem 1rem;
     border-radius: .3rem;
     background-color: var(--primary-color);
-    color: var(--text-color-light);
+    color: var(--heading-color);
     font-weight: var(--font-weight-medium);
     transition: .4s;
 }
@@ -351,7 +357,8 @@ button {
     position: relative;
     padding: 1.2rem;
     text-align: center;
-    background: var(--element-color);
+    /* background: var(--element-color); */
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: .5rem;
     transition: .4s;
@@ -386,7 +393,8 @@ button {
 
 /* DISCOUNT */
 .discount {
-    background: var(--element-color);
+    /* background: var(--element-color); */
+    background-color: var(--element-color);
     border-radius: .8rem;
 }
 
@@ -407,11 +415,16 @@ button {
 }
 
 .new__container {
+    display: grid;
 
 }
 
 .new__card {
-
+    width: 100px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    text-align: center;
 }
 
 .new__tag {
@@ -419,34 +432,152 @@ button {
 }
 
 .new__img {
-
+    max-width: 100%;
+    height: 130px;
+    margin-bottom: 1.5rem;
 }
 
 .new__title {
-
+    margin-bottom: .3rem;
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-medium);
 }
 
 .new__category {
-
+    margin-bottom: .7rem;
 }
 
 .new__price-group {
-
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
 }
 
 .new__price-new {
-
+    color: var(--heading-color);
+    font-weight: var(--font-weight-medium);
 }
 
 .new__price-old {
+    color: var(--primary-color);
+    text-decoration: line-through;
+}
 
+.new-swiper {
+    margin-left: initial;
+    margin-right: initial;
 }
 
 /* NEWSLETTER */
+.newsletter {
+    
+}
 
+.newsletter__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter__description {
+    margin-bottom: 1rem;
+}
+
+.newsletter__box {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+}
+
+.newsletter__input {
+    width: 120px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color-light);
+
+}
 
 /* FOOTER */
+.footer {
 
+}
+
+.footer__container {
+    display: grid;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer__data {
+
+}
+
+.footer__subtitle {
+    margin-bottom: 1rem;
+    font-size: var(--font-size-4);
+}
+
+.footer__icon {
+
+}
+
+.footer__group {
+
+}
+
+.footer__description {
+    margin-bottom: 2rem;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: .3rem;
+    font-size: var(--font-size-4);
+}
+
+.footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--heading-color);
+    border-radius: .3rem;
+    transition: .4s;
+}
+
+.footer__social-link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+
+.footer__list-item {
+    
+}
+
+.footer__link {
+    color: var(--text-color-light);
+}
+
+.footer__link:hover {
+    color: var(--primary-color);
+}
+
+.footer__copy {
+    display: block;
+    margin: 1.5rem 0 1.55rem;
+    text-align: center;
+}
 
 /* BREAKPOINTS */
 /* Small screen */
