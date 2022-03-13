@@ -33,19 +33,19 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a href="" class="nav__link nav__link--active">Home</a>
+                        <a href="#home" class="nav__link nav__link--active">Home</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__link">Candy</a>
+                        <a href="#candy" class="nav__link">Candy</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__link">New</a>
+                        <a href="#new" class="nav__link">New</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__link nav__link--mark">Support</a>
+                        <a href="#" class="nav__link nav__link--mark">Support</a>
                     </li>
                 </ul>
                 <div class="nav__close" id="nav-close">
@@ -89,7 +89,7 @@
         </section>
 
         <!-- FAVORITE -->
-        <section class="favorite section container" id="favorite">
+        <section class="favorite section container">
             <h2 class="section__title section__title--center">
                 Favorite Scare <br>Category
             </h2>
@@ -131,18 +131,20 @@
         </section>
 
         <!-- ABOUT -->
-        <section class="about section container">
-            <h2 class="section__title section__title--center">
-                About Halloween <br>Night
-            </h2>
+        <section class="about section container" id="about">
             <div class="about__container">
-                <div class="about__data">
-                    <p class="about__description">
-                        Night of all the saints, or all the dead, is celebrated on October 31 and it is a very fun
-                        international celebration, this celebration comes from ancient origins, and is already
-                        celebrated by everyone.
-                    </p>
-                    <a href="" class="button">Know more</a>
+                <div class="about__content">
+                    <h2 class="section__title section__title--center">
+                        About Halloween <br>Night
+                    </h2>
+                    <div class="about__data">
+                        <p class="about__description">
+                            Night of all the saints, or all the dead, is celebrated on October 31 and it is a very fun
+                            international celebration, this celebration comes from ancient origins, and is already
+                            celebrated by everyone.
+                        </p>
+                        <a href="" class="button">Know more</a>
+                    </div>
                 </div>
                 <img src="assets/img/about.png" alt="" class="about__img">
             </div>
@@ -243,19 +245,21 @@
 
         <!-- DISCOUNT -->
         <section class="discount container section">
-            <h2 class="section__title section__title--center">
-                50% Discount <br>On New Products
-            </h2>
             <div class="discount__container">
-                <a href="#" class="button button--big">
-                    Go to new
-                </a>
+                <div class="discount__box">
+                    <h2 class="section__title section__title--center">
+                        50% Discount <br>On New Products
+                    </h2>
+                    <a href="#" class="button button--big">
+                        Go to new
+                    </a>
+                </div>
                 <img src="assets/img/discount.png" alt="" class="discount__img">
             </div>
         </section>
 
         <!-- NEW -->
-        <section class="new container section">
+        <section class="new container section" id="new">
             <h2 class="section__title section__title--center">
                 New Arrivals
             </h2>
@@ -263,7 +267,7 @@
                 <div class="swiper new-swiper">
                     <div class="swiper-wrapper">
                         <div class="new__card swiper-slide">
-                            <span class="new__tag"></span>
+                            <span class="new__tag">New</span>
                             <img src="assets/img/new1.png" alt="" class="new__img">
                             <h3 class="new__title">
                                 Hounted House
@@ -281,7 +285,7 @@
                             </div>
                         </div>
                         <div class="new__card swiper-slide">
-                            <span class="new__tag"></span>
+                            <span class="new__tag">New</span>
                             <img src="assets/img/new2.png" alt="" class="new__img">
                             <h3 class="new__title">
                                 Halloween Candy
@@ -299,7 +303,7 @@
                             </div>
                         </div>
                         <div class="new__card swiper-slide">
-                            <span class="new__tag"></span>
+                            <span class="new__tag">New</span>
                             <img src="assets/img/new3.png" alt="" class="new__img">
                             <h3 class="new__title">
                                 Witch Hat
@@ -317,7 +321,7 @@
                             </div>
                         </div>
                         <div class="new__card swiper-slide">
-                            <span class="new__tag"></span>
+                            <span class="new__tag">New</span>
                             <img src="assets/img/new4.png" alt="" class="new__img">
                             <h3 class="new__title">
                                 Rip
@@ -335,7 +339,7 @@
                             </div>
                         </div>
                         <div class="new__card swiper-slide">
-                            <span class="new__tag"></span>
+                            <span class="new__tag">New</span>
                             <img src="assets/img/new5.png" alt="" class="new__img">
                             <h3 class="new__title">
                                 Terrifying Crystal Ball
@@ -353,7 +357,7 @@
                             </div>
                         </div>
                         <div class="new__card swiper-slide">
-                            <span class="new__tag"></span>
+                            <span class="new__tag">New</span>
                             <img src="assets/img/new6.png" alt="" class="new__img">
                             <h3 class="new__title">
                                 Witch Broom
@@ -382,7 +386,7 @@
             </h2>
             <div class="newsletter__container">
                 <p class="newsletter__description">
-                    Promotion new products and sales. Directly to your inbox.
+                    Promotion new products and sales. <br>Directly to your inbox.
                 </p>
                 <div class="newsletter__box">
                     <input type="email" placeholder="Enter your email" class="newsletter__input">
@@ -471,6 +475,11 @@
 
         <span class="footer__copy">&#169; Dariusz Gawron. All rights reserved.</span>
     </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scroll-up" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scroll-up__icon'></i>
+    </a>
 
     <!-- SWIPER JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>

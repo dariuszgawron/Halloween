@@ -31,11 +31,32 @@ function scrollHeader() {
 window.addEventListener('scroll',scrollHeader);
 
 // SCROLL UP
+const scrollUpBtn = document.getElementById('scroll-up');
+function showScrollBtn() {
+    this.scrollY >= 200 ? scrollUpBtn.classList.add('scroll-up--show') : scrollUpBtn.classList.remove('scroll-up--show');
+}
+window.addEventListener('scroll',showScrollBtn);
 
 // SCROLL SECTIONS
+const sections = document.querySelectorAll('section[id]');
+function changeActiveMenuItem() {
+    const scrollY = window.pageYOffset;
+    sections.forEach(section => {
+        const sectionId= section.getAttribute('id');
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 50;
+        const menuLink = document.querySelector(`.nav__menu a[href*=${sectionId}]`);
+        (sectionTop < scrollY && scrollY <= sectionTop + sectionHeight) 
+            ? menuLink.classList.add('nav__link--active')
+            : menuLink.classList.remove('nav__link--active');
+    })
+}
+window.addEventListener('scroll',changeActiveMenuItem);
 
 // SWIPER
 const newSwiper = new Swiper(".new-swiper", {
+    centeredSlides: true,
+    slidesPerView: 'auto',
     spaceBetween: 30,
     loop: true,
     
