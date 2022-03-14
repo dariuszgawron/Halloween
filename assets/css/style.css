@@ -20,11 +20,11 @@
     --primary-color: hsl(24, 90%, 49%);
     --secondary-color: hsl(24, 96%, 42%);
     /* --primary-color: hsl(24, 73%, 55%); */
-    /* --background-color: linear-gradient(95deg, #0E5044, #D9C0A6); */
-    /* --background-color: linear-gradient(270deg ,#00A1AB, #020112
-    ); */
-    --background-color: linear-gradient(90deg ,#2D6509, #4C8D05 
-    );
+    /* --background-color: linear-gradient(90deg ,#2D6509, #4C8D05  */
+    /* ); */
+    /* --background-color: linear-gradient(90deg ,#8F6859, #249F68 ); */
+    --background-color: linear-gradient(90deg ,#805a4b, #198655 );
+    --navbar-color: linear-gradient(150deg ,#634438, #09492c );
     /* --element-color: linear-gradient(138deg, #0E5044, #D9C0A6); */
     --element-color: hsla(0, 0%, 0%, .2);
     --text-color-dark: hsl(206, 4%, 42);
@@ -144,8 +144,8 @@ button {
 /* HEADER */
 .header {
     width: 100%;
-    background: transparent;
-    transition: .4s;
+    /* background: transparent; */
+    transition: all 4s;
 }
 
 .header--fixed {
@@ -156,8 +156,11 @@ button {
 }
 
 .header--active {
-    background: var(--background-color);
-    box-shadow: 0 2px 5px hsl(0, 10%, 17%, .2);
+    /* background: linear-gradient(90deg ,#297207, #427c04 
+    ); */
+    background: var(--navbar-color);
+    /* background: var(--background-color); */
+    box-shadow: 0 2px 5px rgba(66, 34, 34, 0.4);
 }
 
 .nav {
@@ -608,11 +611,13 @@ button {
 /* SCROLL UP */
 .scroll-up {
     position: fixed;
+    display: inline-flex;
     bottom: -35%;
     right: 2rem;
-    padding: .5rem;
+    padding: .4rem;
     background-color: rgba(70, 70, 70, 0.6);
     box-shadow: 0 0 5px hsl(206, 4%, 75%);
+    border-radius: .5rem;
     opacity: .8rem;
     z-index: 100;
     transition: .4s;
@@ -629,12 +634,20 @@ button {
 
 .scroll-up__icon {
     font-size: var(--font-size-3);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
     color: var(--primary-color);
 }
 
 /* SCROLLBAR */
+::-webkit-scrollbar {
+    width: .7rem;
+    background-color: #2D6509;
+}
 
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+}
 
 /* BREAKPOINTS */
 /* Small screen */
@@ -668,7 +681,8 @@ button {
         width: 100%;
         padding: 4rem 2.5rem 4rem;
         z-index: 100;
-        background: var(--background-color);
+        /* background: var(--background-color); */
+        background: var(--navbar-color);
         border-radius: 0 0 1rem 1rem;
         transition: .4s;
     }
@@ -741,6 +755,14 @@ button {
     }
     .discount__img {
         order: 1;
+    }
+
+    .new__card {
+        width: 250px;
+        padding: 2rem;
+    }
+    .new__img {
+        height: 130px;
     }
 
     .footer__container {

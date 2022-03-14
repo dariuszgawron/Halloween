@@ -44,7 +44,7 @@ function changeActiveMenuItem() {
     sections.forEach(section => {
         const sectionId= section.getAttribute('id');
         const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 50;
+        const sectionTop = section.offsetTop - 70;
         const menuLink = document.querySelector(`.nav__menu a[href*=${sectionId}]`);
         (sectionTop < scrollY && scrollY <= sectionTop + sectionHeight) 
             ? menuLink.classList.add('nav__link--active')
@@ -58,6 +58,17 @@ const newSwiper = new Swiper(".new-swiper", {
     centeredSlides: true,
     slidesPerView: 'auto',
     spaceBetween: 30,
-    loop: true,
-    
+    loop: true,  
 })
+
+// SCROLL REVEAL
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    duration: 1500,
+    delay: 200
+});
+scrollReveal.reveal('.home__img',{delay: 400});
+scrollReveal.reveal('.home__data, .favorite__card, .candy__card, .new__container, .newsletter__container');
+scrollReveal.reveal('.about__content, .discount__img', {origin: 'left'});
+scrollReveal.reveal('.about__img, .discount__box', {origin: 'right'});
