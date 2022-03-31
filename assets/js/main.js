@@ -6,7 +6,6 @@ const navLinks = document.querySelectorAll('.nav__link');
 
 // Open menu
 navToggle.addEventListener('click', () => {
-    console.log('ok');
     navMenu.classList.add('nav__menu--show');
 })
 
