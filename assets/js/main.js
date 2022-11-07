@@ -57,6 +57,8 @@ const newSwiper = new Swiper(".new-swiper", {
     centeredSlides: true,
     slidesPerView: 'auto',
     spaceBetween: 30,
+    grabCursor: true,
+    touchEventsTarget: "container",
     loop: true,  
 })
 
