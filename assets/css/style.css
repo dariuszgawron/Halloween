@@ -23,7 +23,7 @@
     --navbar-color: linear-gradient(150deg ,#634438, #09492c );
     --element-color: hsla(0, 0%, 0%, .2);
     --text-color-dark: hsl(206, 4%, 42);
-    --text-color-light: hsl(0, 0%, 77%); /* 95% */
+    --text-color-light: hsl(0, 0%, 77%);
     --heading-color: hsl(0, 0%, 98%);
     --border-color: hsl(0, 0%, 90%);
 }
@@ -259,7 +259,6 @@ button {
 .home__button-group {
     display: flex;
     justify-content: space-between;
-
 }
 
 /* FAVORITE */
